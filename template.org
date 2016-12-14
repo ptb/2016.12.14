@@ -459,6 +459,9 @@
 
 ** Create: Middleman Blog Templates
 
+- Reference: https://github.com/middleman/middleman-templates-default
+- Reference: https://github.com/middleman/middleman-templates-blog
+
 *** Create File: ~src/index.${EXT}.slim~
 
 #+BEGIN_SRC sh
