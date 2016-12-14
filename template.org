@@ -3721,6 +3721,12 @@
 
 ** gulp ▸ task ▸ build ▸ webpack
 
+npm install --save-dev \
+  connect-modrewrite \
+  webpack-dev-middleware \
+  webpack-hot-middleware
+
+
 "middleware": [
   plug.connectModrewrite([`!\\.\\w+$ /index${EXT} [L]`]),
   plug.webpackDevMiddleware(webpack, {
