@@ -3722,16 +3722,14 @@
 ** gulp ▸ task ▸ build ▸ webpack
 
 "middleware": [
-
-  // plug.connectModrewrite([`!\\.\\w+$ /index${EXT} [L]`]),
-  // plug.webpackDevMiddleware(webpack, {
-  //   "publicPath": config.output.publicPath,
-  //   "stats": {
-  //     "colors": true
-  //   }
-  // }),
-  // plug.webpackHotMiddleware(webpack)
-
+  plug.connectModrewrite([`!\\.\\w+$ /index${EXT} [L]`]),
+  plug.webpackDevMiddleware(webpack, {
+    "publicPath": config.output.publicPath,
+    "stats": {
+      "colors": true
+    }
+  }),
+  plug.webpackHotMiddleware(webpack)
 ],
 
 *** Add Package: ~webpack~
