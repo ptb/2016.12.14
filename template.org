@@ -215,6 +215,12 @@
 
 ** Set Up: Middleman Static Site Generator
 
+configure :build do
+  after_build do
+    puts 'hi'
+  end
+end
+
 *** Create File: ~config.rb~
 
 #+BEGIN_SRC sh
@@ -3732,6 +3738,7 @@ npm install --save-dev \
   css-loader
   babel-loader
   babel-core
+  webpack-dev-server@beta
 
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin")
 
@@ -3948,6 +3955,10 @@ new ExtractTextWebpackPlugin({
 
 
 ** Configure: ~nginx~
+
+# https://gist.github.com/vjt/804654
+# http://recipes.sinatrarb.com/p/deployment/nginx_proxied_to_unicorn
+# http://stackoverflow.com/questions/13030149/how-to-deploy-ruby-rack-app-with-nginx
 
 *** Stop Process: ~nginx~
 
