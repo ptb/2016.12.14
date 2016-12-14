@@ -3725,7 +3725,42 @@ npm install --save-dev \
   connect-modrewrite \
   webpack-dev-middleware \
   webpack-hot-middleware
+  extract-text-webpack-plugin
+  style-loader
+  sass-loader
+  deep-assign
+  css-loader
+  babel-loader
+  babel-core
 
+const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin")
+
+  "module": {
+    "loaders": [
+      {
+        // "loader": ["style", "css", "sass"],
+        "loader": ExtractTextWebpackPlugin.extract({
+          "fallbackLoader": "style",
+          "loader": ["css?sourceMap", "sass?sourceMap"]
+        }),
+        "test": /\.s[ac]ss$/
+      },
+      {
+        "exclude": /node_modules/,
+        "loader": "babel",
+        "test": /\.jsx?$/
+      }
+    ]
+  },
+
+new webpack.HotModuleReplacementPlugin(),
+new webpack.NoErrorsPlugin(),
+
+new ExtractTextWebpackPlugin({
+  "allChunks": true,
+  "disable": false,
+  "filename": "[contenthash].css"
+})
 
 "middleware": [
   plug.connectModrewrite([`!\\.\\w+$ /index${EXT} [L]`]),
