@@ -215,11 +215,15 @@
 
 ** Set Up: Middleman Static Site Generator
 
+*** TODO
+
+#+BEGIN_EXAMPLE
 configure :build do
   after_build do
     puts 'hi'
   end
 end
+#+END_EXAMPLE
 
 *** Create File: ~config.rb~
 
@@ -465,8 +469,12 @@ end
 
 ** Create: Middleman Blog Templates
 
+*** TODO
+
+#+BEGIN_EXAMPLE
 - Reference: https://github.com/middleman/middleman-templates-default
 - Reference: https://github.com/middleman/middleman-templates-blog
+#+END_EXAMPLE
 
 *** Create File: ~src/index.${EXT}.slim~
 
@@ -3727,6 +3735,9 @@ end
 
 ** gulp ▸ task ▸ build ▸ webpack
 
+*** TODO
+
+#+BEGIN_EXAMPLE
 npm install --save-dev \
   connect-modrewrite \
   webpack-dev-middleware \
@@ -3779,6 +3790,7 @@ new ExtractTextWebpackPlugin({
   }),
   plug.webpackHotMiddleware(webpack)
 ],
+#+END_EXAMPLE
 
 *** Add Package: ~webpack~
 
@@ -3956,9 +3968,13 @@ new ExtractTextWebpackPlugin({
 
 ** Configure: ~nginx~
 
-# https://gist.github.com/vjt/804654
-# http://recipes.sinatrarb.com/p/deployment/nginx_proxied_to_unicorn
-# http://stackoverflow.com/questions/13030149/how-to-deploy-ruby-rack-app-with-nginx
+*** TODO
+
+#+BEGIN_EXAMPLE
+https://gist.github.com/vjt/804654
+http://recipes.sinatrarb.com/p/deployment/nginx_proxied_to_unicorn
+http://stackoverflow.com/questions/13030149/how-to-deploy-ruby-rack-app-with-nginx
+#+END_EXAMPLE
 
 *** Stop Process: ~nginx~
 
