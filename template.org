@@ -215,7 +215,7 @@
 
 ** Set Up: Middleman Static Site Generator
 
-*** TODO
+*** TODO: Notes
 
 #+BEGIN_EXAMPLE
 configure :build do
