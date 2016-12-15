@@ -469,7 +469,7 @@ end
 
 ** Create: Middleman Blog Templates
 
-*** TODO
+*** TODO: Notes
 
 #+BEGIN_EXAMPLE
 - Reference: https://github.com/middleman/middleman-templates-default
@@ -3735,7 +3735,7 @@ end
 
 ** gulp ▸ task ▸ build ▸ webpack
 
-*** TODO
+*** TODO: Notes
 
 #+BEGIN_EXAMPLE
 npm install --save-dev \
@@ -3968,7 +3968,7 @@ new ExtractTextWebpackPlugin({
 
 ** Configure: ~nginx~
 
-*** TODO
+*** TODO: Notes
 
 #+BEGIN_EXAMPLE
 https://gist.github.com/vjt/804654
